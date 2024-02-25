@@ -402,10 +402,84 @@ print(f"Hello, My name is {name} and I'm {age} years old.")
 
 fruit = 'apples'
 number = 3
-print(f"I have brought {number} {fruit} from store" )'''
+print(f"I have brought {number} {fruit} from store" )
+
+print(f"{2 * 30}")'''
 **********************************************************************************************************************************
 
+#Doc strings.
+def add(num1, num2):
+  """
+  Add up two integer numbers.
 
+  This function simply wraps the ``+`` operator, and does not
+  do anything interesting, except for illustrating what
+  the docstring of a very simple function looks like.
+
+  Parameters
+  ----------
+  num1 : int
+      First number to add.
+  num2 : int
+      Second number to add.
+
+  Returns
+  -------
+  int
+      The sum of ``num1`` and ``num2``.
+
+  See Also
+  --------
+  subtract : Subtract one integer from another.
+
+  Examples
+  --------
+  >>> add(2, 2)
+  4
+  >>> add(25, 0)
+  25
+  >>> add(10, -10)
+  0
+  """
+  return num1 + num2
+
+print(add(1,2))
+#print(add.__doc__)
+#doc strings will execute the commented strings present in the function body
+**********************************************************************************************************************************
+
+import this (PEP8 Zen of python)
+**********************************************************************************************************************************
+
+#Recursion in python.
+# recursion
+def factorial(n):
+  if (n == 0 or n == 1):
+    return 1
+  else:
+    return n * factorial(n - 1)
+
+n=6
+print("number:", n)
+print(factorial(5))
+**********************************************************************************************************************************
+
+# sets in python
+
+'''# set = set()
+# print(type(set))
+
+s = {2, 4, 2, 6}
+print(s)
+
+info = {"Carla", 19, False, 5.9, 19}
+print(info)
+
+harry = set()
+print(type(harry))
+
+for value in info:
+  print(value)'''
 
 
 
