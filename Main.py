@@ -350,14 +350,61 @@ print(animals[::2])     #using positive indexes
 print(animals[-8:-1:2]) #using negative indexes'''
 **********************************************************************************************************************************
 
-#Tuple methods
-# tuple1 = (0, 1, 2, 3, 2, 31, 1, 3, 2, 3)
-# # res = tuple1.count(3)
-# # res = tuple1.index(3)
-# # res = tuple1.index(311)
-# # res = tuple1.index(3, 4, 8)
-# res = len(tuple1)
-# print('Count of 3 in tuple1 is:', res)
+Tuple methods
+tuple1 = (0, 1, 2, 3, 2, 31, 1, 3, 2, 3)
+# res = tuple1.count(3)
+# res = tuple1.index(3)
+# res = tuple1.index(311)
+# res = tuple1.index(3, 4, 8)
+res = len(tuple1)
+print('Count of 3 in tuple1 is:', res)
+**********************************************************************************************************************************
+
+Time module:
+  import time
+  #hour = int(time.strftime('%I,%M,%S'))
+  hour = int(time.strftime('%I'))
+  # hour  = time.asctime()
+  print(hour)
+  # first method
+  # if(hour >= 0 and hour < 12):
+  #   print("good morning")
+  # elif (hour==12 and hour < 16):
+  #   print("good afternoon")
+  # else:
+  #   print("good night")
+    
+  #second method
+  # if (hour >= 0 and hour < 12):
+  #   print("Good Morning Sir!")
+  # elif (hour >= 12 and hour < 17):
+  #   print("Good Afternoon Sir!")
+  # elif (hour >= 17 and hour < 0):
+  #   print("Good Night Sir!")
+**********************************************************************************************************************************
+
+'''#Fstrings:
+# first method.
+txt = "For only {price:.2f} dollars!"
+# print(txt.format(price = 49))
+
+# #second method
+price = 49
+txt = f"For only {price:.2f} dollars!"
+print(txt)'''
+
+'''#second example of fstrings.
+val = 'Geeks'  
+print(f"{val}for{val} is a portal for {val}.")  
+name = 'Tushar'  
+age = 23  
+print(f"Hello, My name is {name} and I'm {age} years old.")
+
+fruit = 'apples'
+number = 3
+print(f"I have brought {number} {fruit} from store" )'''
+**********************************************************************************************************************************
+
 
 
 
